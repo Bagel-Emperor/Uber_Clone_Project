@@ -14,9 +14,7 @@ from unittest.mock import patch, MagicMock
 import sys
 import logging
 
-# Add the current directory to the path so we can import our session manager
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
+# Import from local module
 from session_manager import (
     SessionManager, 
     PersistentSessionManager, 
